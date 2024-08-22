@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinay Thippani Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="logo">My Portfolio</div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="l"><a href="#about">About</a></li>
+                <li class="l"><a href="#education">Education</a> </li>
+                <li class="l"><a href="#projects">Projects</a></li>
+                <li class="l"><a href="#skills">Skills</a></li>
+                <li class="l"><a href="#contact">Contact</a></li>
+                <li class="l">
+                    <div class="contactDetails">
+                        <div class="contactImage">
+                            <a href="https://github.com/VinayThippaniGit" target="_blank">
+                                <img src="github-icon.png" alt="GitHub">
+                            </a>
+                            <a href="https://www.linkedin.com/in/vinaythippani131" target="_blank">
+                                <img src="linkedin-icon.png" alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
-
     <section id="home" class="section home">
+        
         <div class="intro">
             <h1>Hello , Myself Vinay Thippani</h1>
             <h1>Welcome to My Portfolio</h1>
             <p>Explore my work and skills.</p>
-            <button onclick="scrollToSection('about')">Get Started</button>
+            <button class="btn" onclick="scrollToSection('about')">Get Started</button>
         </div>
     </section>
 
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <p>I'm a student with a passion for web development.</p>
+        <div class="About">
+        <p>Hello Myself Vinay Thippani, a 2023 graduee</p>
+        <p>Iam extremely overwhelmed and glad to see you for visiting my portfolio.</p>
+
+        <p>Iam a person looking forward to leverage my skills and expand my knowledge and gain experience through it.
+            Iam passionated about how these Information Technology transforms this world.I would love to be a part of it.
+            That's the reason I choosed CSE as my domain in my Graduation. </p>
+        <p>Iam very intrested in learning new things and love to implement them in a practical way.
+            I love developing Applications , for this i have gone through the Full stack Java course
+            and expanded my skills. </p>
+        <p>I have developed various applications using those skills , you can view in my projects section.</p>
+        <p>Iam currently located in Hyderabad and learning new skills where so that they can be used by me in the IT sector
+            As a fresher iam looking for an oppurtunity to implement my theoretical knowledge practically, and work towards the organization motive.
+            If you have any oppurtunities I will be really glad to hear it.
+            You can have my Contact details below.
+        </p>
+        <p>Thank You.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section education">
+        <h2>Education</h2>
+        <br>
+        <div class="course">
+            <h3><b>* <span class="detail">Bachelor of Technology</span></b></h3>
+            <h3><b>Duration : <span class="detail">2020 - 2023</span></b></h3>
+            <h3><b>Specilization : <span class="detail">Computer science and engineering</span></b></h3>
+            <h3><b>Institute : <span class="detail">Mother Thressa college of Engineering and Technology , Peddapalli</span></b></h3>
+        </div>
+        <br>
+        <div class="course">
+            <h3><b><span class="detail">Diploma</span></b></h3>
+            <h3><b>Duration : <span class="detail">2017 - 2020</span></b></h3>
+            <h3><b>Specilization : <span class="detail">Mining engineering</span></b></h3>
+            <h3><b>Institute : <span class="detail">Mother Thressa college of Engineering and Technology , Peddapalli</span></b></h3>
+        </div>
+        <br>
+        <h2>Additional courses</h2>
+        <div class="course">
+            <h3><b><span class="detail">Full Stack Java developer</span></b></h3>
+            <h3><b>Duration : <span class="detail">2023 Aug - 2024 Aug</span></b></h3>
+            <h3><b>Institute : <span class="detail">QEdge Institutions , Hyderabad</span></b></h3>
+        </div>
     </section>
 
     <section id="projects" class="section projects">
@@ -38,12 +95,60 @@
         <div class="project-list">
             <div class="project">
                 <h3>Attendance Management System</h3>
-                <p>An online attendance system </p>
-                <p><a href="https://github.com/VinayThippaniGit/AttendanceManagementSystem">Source code</a></p>
+                <p>An online attendance management system using java to take attendance of students and maintain their attendance data</p>
+                <a href="https://github.com/VinayThippaniGit/AttendanceManagementSystem">
+                    <p class="btn">Source code</p>
+                </a>
+                <p><video controls width="100%" src="AttendanceProject.mp4" autoplay controlslist="nodownload"></p>
             </div>
             <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+                <h3>Online Banking Application</h3>
+                <p>An online banking management system using java where user can perform various bank operations</p>
+                <a href="https://github.com/VinayThippaniGit/Bank">
+                    <p class="btn">Source code</p>
+                </a>
+                <p><video controls width="100%" src="Bank Application - Made with Clipchamp.mp4" autoplay
+                        controlslist="nodownload"></p>
+            </div>
+            <div class="project">
+                <h3>Rock paper Scissors</h3>
+                <p>An online game</p>
+                <a href="https://vinaythippanigit.github.io/RockPaperScissorsGame">
+                    <p class="btn">Live link</p>
+                </a>
+                <a href="https://github.com/VinayThippaniGit/RockPaperScissorsGame">
+                    <p class="btn">Source code</p>
+                </a>
+            </div>
+            <div class="project">
+                <h3>To Do App</h3>
+                <p>To do app for entering user to do lists</p>
+                <a href="https://vinaythippanigit.github.io/ToDo">
+                    <p class="btn">Live link</p>
+                </a>
+                <a href="https://github.com/VinayThippaniGit/ToDo">
+                    <p class="btn">Source code</p>
+                </a>
+            </div>
+            <div class="project">
+                <h3>Calculator</h3>
+                <p>Basic calculator to perform Mathermatical operations using React Js</p>
+                <a href="https://vinaythippanigit.github.io/Calculator">
+                    <p class="btn">Live link</p>
+                </a>
+                <a href="https://github.com/VinayThippaniGit/Calculator">
+                    <p class="btn">Source code</p>
+                </a>
+            </div>
+            <div class="project">
+                <h3>Independence Day</h3>
+                <p>Indian Flag hosting on the occasion of Independence Day</p>
+                <a href="https://vinaythippanigit.github.io/IndependenceDay">
+                    <p class="btn">Live link</p>
+                </a>
+                <a href="https://github.com/VinayThippaniGit/IndependenceDay">
+                    <p class="btn">Source code</p>
+                </a>
             </div>
             <!-- Add more projects here -->
         </div>
@@ -51,42 +156,62 @@
 
     <section id="skills" class="section skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Servlets</li>
+        <ul class="backend">
+            <li>Java Programming language</li>
+            <li>Jakata Servlet</li>
             <li>Jsp</li>
+            <li>Spring Boot</li>
+            <li>JDBC</li>
+            <li>Spring IOC</li>
+            <li>Spring AOP</li>
+            <li>Spring Transaction</li>
+            <li>Spring MVC</li>
+        </ul>
+        <ul class="frontend">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>React</li>
-            <!-- Add more skills here -->
+            <li>React Js</li>
+        </ul>
+        <ul class="database">
+            <li>MySQL</li>
+            <li>Hibernate ORM</li>
+            <li>JPA</li>
+            <li>Spring JDBC</li>
+        </ul>
+        <ul class="tools">
+            <li>Maven</li>
+            <li>JUnit</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>MS.Excel</li>
+            <li>MS.Word</li>
+            <li>MS.Powerpoint</li>
         </ul>
     </section>
 
     <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
+        <h2>Contact Me on Email</h2>
+        
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
+            <input type="text" value="Vinay Thippani" readonly>
+            <input type="email" value="thippanivinay633@gmail.com" readonly>
         </form>
     </section>
 
-    
-
     <footer>
         <div class="social-links-bottom">
-            <a href="https://github.com/yourusername" target="_blank">
+            <a href="https://github.com/VinayThippaniGit" target="_blank">
                 <img src="github-icon.png" alt="GitHub">
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <a href="https://www.linkedin.com/in/vinaythippani131" target="_blank">
                 <img src="linkedin-icon.png" alt="LinkedIn">
             </a>
         </div>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024 Vinay Thippani. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
