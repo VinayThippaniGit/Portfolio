@@ -291,6 +291,7 @@ footer {
     background:linear-gradient(to right,rgb(26, 136, 167),rgb(4, 61, 126));
     border-radius: 5px;
     margin: 0px 10%;
+    font-size: 70%;
 }
 .course:hover{
     cursor: pointer;
